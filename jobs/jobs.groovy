@@ -14,3 +14,17 @@ folder('test') {
     displayName('test')
     description('Folder for example jobs')
 }
+
+multibranchPipelineJob("myjob") {
+  branchSources {
+    branchSource {
+      source {
+        bitbucket {
+          credentialsId('bitbucket-login-user-pass')
+          repoOwner('myteam')
+          repository('myrepo')
+        }
+      }
+    }
+  }
+}
