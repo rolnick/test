@@ -9,3 +9,8 @@ folder('DockerImages') {
     displayName('Docker Images')
     description('Folder for jobs baking Docker images')
 }
+
+folder('test') {
+    displayName('test')
+    description('Folder for example jobs')
+}
